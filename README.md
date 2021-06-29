@@ -73,7 +73,7 @@ To run *jps* the location of the jpscore library (e.g., on Linux `jpscore.so`) n
 PYTHONPATH=~/simulator-build/bin ./jps/jps --help
 ```
 
-To save make the PYTHONPATH for the session you can run:
+To save the PYTHONPATH for the session you can run:
 ```bash
 export PYTHONPATH=~/simulator-build/bin 
 ```
