@@ -33,6 +33,7 @@
 
 # vscode workspace file
 *.code-workspace
+.vscode
 
 # pycache
 __pycache__/

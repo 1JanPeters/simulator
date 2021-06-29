@@ -72,6 +72,27 @@ To run *jps* the location of the jpscore library (e.g., on Linux `jpscore.so`) n
 ```bash
 PYTHONPATH=~/simulator-build/bin ./jps/jps --help
 ```
+
+To save make the PYTHONPATH for the session you can run:
+```bash
+export PYTHONPATH=~/simulator-build/bin 
+```
+### Develope in a container
+
+```bash
+docker build -t simulator -f container/build/RemoteDockerfile .
+docker run -v <path-to-repository>/:/app -p 5000:22 -i -t simulation /bin/bash
+```
+When working with files from Windows the line endings have to be changed to be compatible to unix when working in a container environment e.g.
+Run:
+```bash
+dos2unix $(find . -type f)
+```
+in the project directory.
+To change the line endings back enter:
+```bash
+unix2dos $(find . -type f)
+```
 ### Repository Layout
 
 The repository layout follows the high level architecture of the *jps* tool. The
