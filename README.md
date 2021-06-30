@@ -93,6 +93,10 @@ To change the line endings back enter:
 ```bash
 unix2dos $(find . -type f)
 ```
+To use the PYTHONPATH of the docker container with vs code paste this inside the launch.json and the _workspace_.json:
+```bash
+"python.pythonPath": "${env.PYTHONPATH}",
+```
 ### Repository Layout
 
 The repository layout follows the high level architecture of the *jps* tool. The
