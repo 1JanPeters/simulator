@@ -81,7 +81,7 @@ export PYTHONPATH=~/simulator-build/bin
 
 ```bash
 docker build -t simulator -f container/build/RemoteDockerfile .
-docker run -v <path-to-repository>/:/app -p 5000:22 -i -t simulation /bin/bash
+docker run -v <path-to-repository>/:/app -p 5000:22 -i -t simulator /bin/bash
 ```
 When working with files from Windows the line endings have to be changed to be compatible to unix when working in a container environment e.g.
 Run:
